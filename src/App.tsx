@@ -4,7 +4,7 @@ import { Router } from "./routes";
 function App() {
 	return (
 		<>
-			<BrowserRouter>
+			<BrowserRouter basename="/visualizador-de-filmes-studios-ghibli">
 				<Router />
 			</BrowserRouter>
 		</>
