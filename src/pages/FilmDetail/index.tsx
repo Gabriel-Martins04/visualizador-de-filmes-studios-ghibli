@@ -29,13 +29,22 @@ export const FilmDetail = () => {
 
 	return (
 		<main className="flex flex-col gap-6 items-center text-3xl p-6">
-			<h1>{film.title}</h1>
+			<h1 className="font-bold">{film.title}</h1>
 
-			<p>Director: {film.director}</p>
-			<p>Producer: {film.producer}</p>
-			<p>Release date: {film.release_date}</p>
-			<p>Rotten Tomatoes's score: {film.rt_score}</p>
-			<p>Description: {film.description}</p>
+			<p>
+				<span>Director:</span> {film.director}
+			</p>
+			<p>
+				<span>Producer:</span> {film.producer}
+			</p>
+			<p>
+				<span>Release date:</span> {film.release_date}
+			</p>
+			<p>
+				<span>Rotten Tomatoes's score:</span> {film.rt_score}
+			</p>
+			<p className="font-bold">Description:</p>
+			<p className="max-w-[75%]">{film.description}</p>
 		</main>
 	);
 };

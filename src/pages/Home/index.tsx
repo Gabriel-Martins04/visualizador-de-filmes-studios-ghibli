@@ -54,8 +54,8 @@ export const Home = () => {
 
 			<section className="grid grid-cols-[repeat(auto-fit,minmax(270px,1fr))] gap-6 p-6">
 				{films.map((film: Film) => (
-					<Link to={`/films/${film.id}`} key={film.id}>
-						<h2 className="text-center pb-3 text-[19px]">{film.title}</h2>
+					<Link className="border-3 border-red-500" to={`/films/${film.id}`} key={film.id}>
+						<h2 className="text-center py-2 text-[19px] font-bold">{film.title}</h2>
 
 						<img src={film.movie_banner} alt={film.title} />
 					</Link>
