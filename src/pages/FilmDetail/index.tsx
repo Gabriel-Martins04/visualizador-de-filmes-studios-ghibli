@@ -28,7 +28,7 @@ export const FilmDetail = () => {
 	}
 
 	return (
-		<main className="flex flex-col gap-6 items-center text-3xl p-6">
+		<main className="flex flex-col gap-6 items-center text-center text-3xl p-6">
 			<h1 className="font-bold">{film.title}</h1>
 
 			<p>
