@@ -1,73 +1,45 @@
-# React + TypeScript + Vite
+# Visualizador de filmes Studios Ghibli
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pequena aplicação desenvolvida para praticar desenvolvimento **Front-End**.
+O projeto foi criado utilizando **React + Vite e uma API pública dos Studios Ghibli** e tem como objetivo praticar conceitos de componentes, consumo de dados e organização de interface.
 
-Currently, two official plugins are available:
+## 📌 Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto foi desenvolvido como parte do curso DevQuest, foi a atividade final do módulo de front-end.
+A aplicação permite visualizar informações de forma simples através de uma interface responsiva.
 
-## React Compiler
+## 🚀 Tecnologias utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- TypeScript
+- Tailwind CSS
 
-## Expanding the ESLint configuration
+## ⚙️ Como executar o projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Clone o repositório:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+git clone https://github.com/Gabriel-Martins04/visualizador-de-filmes-studios-ghibli.git
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Entre na pasta do projeto:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+cd visualizador-de-filmes-studios-ghibli
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Instale as dependências:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Execute o projeto:
+
+npm run dev
+
+## 🌐 Deploy
+
+A aplicação pode ser acessada em:
+https://gabriel-martins04.github.io/visualizador-de-filmes-studios-ghibli/
+
+## 👨‍💻 Autor
+
+Gabriel dos Santos Martins
+
+Projeto desenvolvido para fins de estudo.
