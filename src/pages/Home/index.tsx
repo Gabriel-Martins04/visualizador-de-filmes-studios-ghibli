@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export interface Film {
-	id: number;
+	id: string;
 	title: string;
 	original_title: string;
 	image: string;
@@ -10,9 +10,9 @@ export interface Film {
 	description: string;
 	director: string;
 	producer: string;
-	release_date: number;
-	running_time: number;
-	rt_score: number;
+	release_date: string;
+	running_time: string;
+	rt_score: string;
 	people: string[];
 	species: string[];
 	location: string[];
